@@ -28,9 +28,9 @@ function game() {
         }
         let computerChoice = computerPlay();
         let winString = getResults(playerChoice, computerChoice);
-        let winnerSubstring = winString.slice(0, 7);
-        if (winnerSubstring == 'You win') p1Score++;
-        else if (winnerSubstring == 'You los') p2Score++;
+        let winnerSubstring = winString.slice(4, 7);
+        if (winnerSubstring == 'win') p1Score++;
+        else if (winnerSubstring == 'los') p2Score++;
         console.log(winString);
     }
 
