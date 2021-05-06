@@ -4,16 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Rock Paper Scissors</title>
+    <link href="styles/reset.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="styles/rps.css" rel="stylesheet" type="text/css">
     <script src="scripts/rps.js"></script>
   </head>
   <body>
-    <div class="jumbotron">
+    <div class="container-fluid header-div">
       <h1>Rock Paper Scissors</h1>
     </div>
-    <div class="container-fluid">
-      <p>Play this game with your JavaScript console open.</p>
-      <p>Reload page in your browser to play again.</p>
+    <div class="container body-div">
+      <div class="text-output">
+        <div class="text1">Pick Rock, Paper or Scissors</div>
+        <div class="scores">
+          <div class="p1-score">
+            <div>Player</div>
+            <div class="p1-score-number">0</div>
+          </div>
+          <div class="cpu-score">
+            <div>CPU</div>
+            <div class="cpu-score-number">0</div>
+          </div>
+        </div>
+        <div class="text2">Best out of 5!</div>
+      </div>
+      <div class="play-area">
+        <div class="player-div">
+          <div class="player-graphic-div"><img id="player-graphic" src="./images/rock-left.png" alt="rock"></div>
+          <div class="player-text-div">Player</div>
+        </div>
+        <div id="countdown">VS.</div>
+        <div class="player-div">
+          <div class="cpu-graphic-div"><img id="cpu-graphic" src="./images/rock-right.png" alt="rock"></div>
+          <div>CPU</div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="choice-button" id="rock-button" value="rock">Rock</button>
+        <button class="choice-button" id="paper-button" value="paper">Paper</button>
+        <button class="choice-button" id="scissors-button" value="scissors">Scissors</button>
+      </div>
     </div>
   </body>
 </html>

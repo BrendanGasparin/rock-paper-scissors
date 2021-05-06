@@ -1,0 +1,94 @@
+body {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.body-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 85vh;
+    border: solid 1px white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.choice-button {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.6rem 1rem;
+    width: 8rem;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.header-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222222;
+    text-align: center;
+    height: 15vh;
+    border: 1px solid white;
+}
+
+.p1-score {
+    padding-right: 4rem;
+}
+
+.cpu-score {
+    padding-left: 4rem;
+}
+
+.play-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.player-div {
+    text-align: center;
+}
+
+.scores {
+    display: flex;
+    padding: 1rem 0;
+}
+
+.text-output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 12rem;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: auto 0;
+    padding: 0 0.3rem;
+    width: 6rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    img {
+        height: 67px;
+        width: 80px;
+    }
+}
